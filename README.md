@@ -5,18 +5,18 @@ A Selenium automation framework built with Python, PyTest, and the Page Object M
 ## Project Structure
 python-selenium-pytest-framework/
 ├── config/
-│   └── config.py          # Central configuration (URL, browser, wait times)
+│   └── config.py
 ├── pages/
-│   ├── LoginPage.py        # Login page actions
-│   ├── LogoutPage.py       # Logout page actions
-│   ├── PIMPage.py          # PIM module page actions
-│   └── SearchEmployee.py   # Search employee page actions
+│   ├── LoginPage.py
+│   ├── LogoutPage.py
+│   ├── PIMPage.py
+│   └── SearchEmployee.py
 ├── tests/
-│   ├── conftest.py         # PyTest fixtures (driver setup and teardown)
-│   ├── test_login.py       # Login test cases
-│   ├── test_logout.py      # Logout test cases
-│   ├── test_PIM.py         # PIM module test cases
-│   └── test_searchEmployee.py  # Search employee test cases
+│   ├── conftest.py
+│   ├── test_login.py
+│   ├── test_logout.py
+│   ├── test_PIM.py
+│   └── test_searchEmployee.py
 ├── .gitignore
 ├── pytest.ini
 └── README.md
