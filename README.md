@@ -45,7 +45,7 @@ venv\Scripts\activate
 
 3. Install dependencies
 ```bash
-pip install selenium pytest webdriver-manager
+pip install -r requirements.txt
 ```
 
 ## Running Tests
