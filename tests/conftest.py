@@ -9,8 +9,13 @@ import pytest
 
 @pytest.fixture()
 def setup():
-    driver:WebDriver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
-    driver.maximize_window()
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
+
+    driver:WebDriver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=options)
+    # driver.maximize_window()
     driver.implicitly_wait(10)
 
     yield driver
