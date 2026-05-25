@@ -16,7 +16,7 @@ def setup():
 
     driver:WebDriver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),options=options)
     # driver.maximize_window()
-    driver.implicitly_wait(10)
+    driver.implicitly_wait(20)
 
     yield driver
         

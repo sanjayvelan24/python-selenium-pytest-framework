@@ -17,7 +17,7 @@ class Search_Employee:
     #Constructor
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 10)
+        self.wait = WebDriverWait(driver, 20)
 
     #Actions
     def clickPIMbutton(self):

@@ -14,7 +14,7 @@ class Loginpage:
 
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 10)
+        self.wait = WebDriverWait(driver, 20)
     
     #actions
     def setusername(self,username):

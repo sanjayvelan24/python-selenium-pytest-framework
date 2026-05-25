@@ -14,7 +14,7 @@ class LogOut :
     #constructor
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(self.driver, 10)
+        self.wait = WebDriverWait(self.driver, 20)
     
     #actions
     # def setusername(self,username):
